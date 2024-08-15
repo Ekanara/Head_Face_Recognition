@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/25c3842b-65fd-41a3-8e8c-5ee1231dfd3e)# YOLOv7 Setup Guide
-
+# YOLOv7 Setup Guide
+![image](https://github.com/user-attachments/assets/25c3842b-65fd-41a3-8e8c-5ee1231dfd3e)
 This guide will walk you through setting up the environment required to run YOLOv7 on a machine with CUDA support.
 
 ## Table of Contents
