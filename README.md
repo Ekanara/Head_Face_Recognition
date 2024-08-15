@@ -9,7 +9,7 @@ This guide will walk you through setting up the environment required to run YOLO
 - [Environment Setup](#environment-setup)
 - [CUDA Installation](#cuda-installation)
 - [YOLOv7 Installation](#yolov7-installation)
-- [Verification](#verification)
+- [Deploy](Deploy)
 
 ## Prerequisites
 
@@ -79,7 +79,7 @@ Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) accordin
 
 ## NOTICE:
 
-## Please change all line of “matching_matrix = torch.zeros_like(cost, device= device)” and matching_matrix = torch.zeros_like(cost) into matching_matrix = torch.zeros_like(cost, device= 'cpu') to avoid encountering CUDA error
+## Please change all line of “matching_matrix = torch.zeros_like(cost, device= device)” and "matching_matrix = torch.zeros_like(cost) into matching_matrix = torch.zeros_like(cost, device= 'cpu') in utils/loss.py to avoid encountering CUDA error
 
 2. **Weight**
    
@@ -89,7 +89,34 @@ Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) accordin
    
    Click [here.](https://drive.google.com/file/d/1v5DTTaNgrBMtU60AurbUY72o9okU9jxs/view?usp=drive_link) to download.
 
+# Deploy
+1. Training
+
+   Open the terminal and type
    
+   ```bash
+      python yolov7/train_aux.py --batch 16  --cfg ./config.yaml --epochs 60 --data ./data.yaml --hyp ./hyp.yaml --img 640 --weights 'yolov7-w6.pt' --device 0 --entity 'yolov7' --project <project_name> --name <name>
+
+2. Testing
+   
+   Open the terminal and type
+
+   ```bash
+      python yolov7/detect.py --weights <your "best.pt" path you just train" --conf 0.3 --img 1280 --source scut_headface/images/test/
+
+3. Tensorboard
+   Open the terminal and type
+
+   ```bash
+      cd <project_name>
+      tensorboard --logdir ./ --host=127.0.0.1
+
+That is all, thank you for reading
+   
+
+
+   
+         
    
 
 
