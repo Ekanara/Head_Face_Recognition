@@ -77,9 +77,11 @@ Ensure you have PyTorch installed with CUDA support:
 Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) according to your setup.
 
 2. **Weight**
+   
    This YOLOv7 was train on [YOLOv7-W6 weight.](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt)
 
-3. **Dataset**
+4. **Dataset**
+   
    Click [here.](https://drive.google.com/file/d/1v5DTTaNgrBMtU60AurbUY72o9okU9jxs/view?usp=drive_link) to download.
 
    
