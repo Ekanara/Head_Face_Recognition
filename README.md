@@ -78,6 +78,7 @@ Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) accordin
 
 2. **Weight**
    This YOLOv7 was train on [YOLOv7-W6 weight.](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt)
+
    
 
    
