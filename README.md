@@ -77,11 +77,15 @@ Ensure you have PyTorch installed with CUDA support:
       
 Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) according to your setup.
 
+# NOTICE:
+
+## Please change all line of “matching_matrix = torch.zeros_like(cost, device= device)” and matching_matrix = torch.zeros_like(cost) into matching_matrix = torch.zeros_like(cost, device= 'cpu') to avoid encountering CUDA error
+
 2. **Weight**
    
    This YOLOv7 was train on [YOLOv7-W6 weight.](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt)
 
-4. **Dataset**
+3. **Dataset**
    
    Click [here.](https://drive.google.com/file/d/1v5DTTaNgrBMtU60AurbUY72o9okU9jxs/view?usp=drive_link) to download.
 
