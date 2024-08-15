@@ -4,9 +4,10 @@ Paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-ti
 
 
 # Metrics:
+
 <div align="center">
     <a href="./">
-        <img src=".inference/screenshot1.png" width="79%"/>
+        <img src=".inference/screenshot1.png" width="59%"/>
     </a>
 </div>
 
