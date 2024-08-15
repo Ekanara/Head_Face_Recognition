@@ -1,6 +1,6 @@
 # Head-Face Detection using YOLOv7 Multi-task Learning
-## Setup Guide
 ![image](Test/PartA_00115.jpg)
+## Setup Guide
 This guide will walk you through setting up the environment required to run YOLOv7 on a machine with CUDA support.
 
 ## Table of Contents
