@@ -25,8 +25,8 @@ Before you start, ensure that you have the following:
    ```bash
    
     git clone https://github.com/WongKinYiu/yolov7.git
+   
 2. **Create a Python Virtual Environment**
-
 It’s recommended to use a virtual environment to avoid conflicts with other projects.
     ```bash
     
@@ -61,6 +61,30 @@ After installation, verify that CUDA is properly installed:
     ```bash
     
     nvcc --version
+# YOLOv7 Installation
+1. **Install Required Python Packages**
+
+Install the dependencies listed in requirements.txt:
+      ```bash
+
+      cd yolov7
+      pip install -r requirements.txt 
+
+Ensure you have PyTorch installed with CUDA support:
+      ```bash
+
+      pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+      
+Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) according to your setup.
+
+2. **Weight**
+   Please download [YOLOv7-W6 weight.](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt)
+
+   
+   
+
+
+
 
 
     
