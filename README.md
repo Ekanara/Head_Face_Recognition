@@ -2,7 +2,7 @@
 
 This guide will walk you through setting up the environment required to run YOLOv7 on a machine with CUDA support.
 
-# Table of Contents
+## Table of Contents
 
 - [Prerequisites](#prerequisites)
 - [Environment Setup](#environment-setup)
@@ -10,7 +10,7 @@ This guide will walk you through setting up the environment required to run YOLO
 - [YOLOv7 Installation](#yolov7-installation)
 - [Verification](#verification)
 
-# Prerequisites
+## Prerequisites
 
 Before you start, ensure that you have the following:
 
