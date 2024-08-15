@@ -106,6 +106,7 @@ Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) accordin
       python yolov7/detect.py --weights <your "best.pt" path that you just train> --conf 0.3 --img 1280 --source scut_headface/images/test/
 
 3. **Tensorboard**
+   
    Open the terminal and type
 
    ```bash
