@@ -23,7 +23,8 @@ Before you start, ensure that you have the following:
 1. **Clone the YOLOv7 Repository**
 
    ```bash
-   git clone https://github.com/WongKinYiu/yolov7.git
+   
+    git clone https://github.com/WongKinYiu/yolov7.git
 2. **Create a Python Virtual Environment**
 
 It’s recommended to use a virtual environment to avoid conflicts with other projects.
@@ -33,9 +34,9 @@ It’s recommended to use a virtual environment to avoid conflicts with other pr
     source yolov7-env/bin/activate  # On Windows use yolov7-env\Scripts\activate
 
 3. **Upgrade pip**
-   ```bash
+    ```bash
 
-   pip install upgrade pip
+    pip install upgrade pip
 
 # CUDA Installation
 If you don't have CUDA installed, follow these steps:
