@@ -23,7 +23,6 @@ Before you start, ensure that you have the following:
 1. **Clone the YOLOv7 Repository**
 
    ```bash
-   
     git clone https://github.com/WongKinYiu/yolov7.git
    
 2. **Create a Python Virtual Environment**
@@ -38,7 +37,7 @@ It’s recommended to use a virtual environment to avoid conflicts with other pr
 
     pip install upgrade pip
 
-# CUDA Installation
+## CUDA Installation
 If you don't have CUDA installed, follow these steps:
 
 1. **Check for CUDA Compatibility**
@@ -61,7 +60,7 @@ After installation, verify that CUDA is properly installed:
     ```bash
     
     nvcc --version
-# YOLOv7 Installation
+## YOLOv7 Installation
 1. **Install Required Python Packages**
 
 Install the dependencies listed in requirements.txt:
