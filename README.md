@@ -77,7 +77,7 @@ Ensure you have PyTorch installed with CUDA support:
       
 Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) according to your setup.
 
-# NOTICE:
+## NOTICE:
 
 ## Please change all line of “matching_matrix = torch.zeros_like(cost, device= device)” and matching_matrix = torch.zeros_like(cost) into matching_matrix = torch.zeros_like(cost, device= 'cpu') to avoid encountering CUDA error
 
