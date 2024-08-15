@@ -1,74 +1,77 @@
-# YOLOv7 Object Detection Setup and Inference
+# YOLOv7 Setup Guide
 
-This repository provides a step-by-step guide to setting up your Python environment for running YOLOv7 object detection and displaying inference results on images.
+This guide will walk you through setting up the environment required to run YOLOv7 on a machine with CUDA support.
 
-## 1. Clone the Repository
+## Table of Contents
 
-```bash
-git clone [https://github.com/your-username/yolov7-setup.git](https://github.com/WongKinYiu/yolov7.git)
-cd yolov7
-content_copy
+- [Prerequisites](#prerequisites)
+- [Environment Setup](#environment-setup)
+- [CUDA Installation](#cuda-installation)
+- [YOLOv7 Installation](#yolov7-installation)
+- [Verification](#verification)
 
-Use code with caution.
-Markdown
-## 2. Create a Virtual Environment (Recommended)
-python3 -m venv yolov7-env
-source yolov7-env/bin/activate
-content_copy
-Use code with caution.
-Bash
-3. Install Dependencies
-pip install -r requirements.txt
-content_copy
-Use code with caution.
-Bash
+## Prerequisites
 
-This will install essential libraries like:
+Before you start, ensure that you have the following:
 
-PyTorch
+- A machine with a CUDA-capable GPU.
+- `python3.8+` installed.
+- Basic knowledge of Python and command-line interface (CLI) operations.
 
-OpenCV (cv2)
+## Environment Setup
 
-NumPy
+1. **Clone the YOLOv7 Repository**
 
-Matplotlib (optional, for visualization)
+   ```bash
+   git clone https://github.com/WongKinYiu/yolov7.git
+2. **Create a Python Virtual Environment**
 
-4. Download YOLOv7 Weights
+It’s recommended to use a virtual environment to avoid conflicts with other projects.
+    ```bash
+    
+    python3 -m venv yolov7-env
+    source yolov7-env/bin/activate  # On Windows use yolov7-env\Scripts\activate
 
-Download the YOLOv7 weights file (e.g., yolov7.pt) from the official YOLOv7 repository: https://github.com/WongKinYiu/yolov7
+3. **Upgrade pip**
+   ```bash
 
-Place the downloaded weights file (yolov7.pt) in the root directory of this project.
+   pip install upgrade pip
 
-5. Run Inference
-python detect.py --source path/to/your/image.jpg --weights yolov7.pt
-content_copy
-Use code with caution.
-Bash
+# CUDA Installation
+If you don't have CUDA installed, follow these steps:
 
-Replace path/to/your/image.jpg with the path to your image file.
+1. **Check for CUDA Compatibility**
 
-Optional Arguments:
+Make sure your GPU is compatible with CUDA by checking [NVIDIA's CUDA GPUs list](https://developer.nvidia.com/cuda-gpus).
 
---conf-thres: Confidence threshold for detection (default: 0.25).
+2. **Install CUDA Toolkit**
 
---iou-thres: IoU threshold for non-max suppression (default: 0.45).
+Download and install the appropriate CUDA version from the [NVIDIA CUDA Toolkit.](https://developer.nvidia.com/cuda-toolkit)
 
---view-img: Show the detection results in a window (add the flag to enable).
+Follow the installation instructions provided by NVIDIA for your operating system.
 
-6. Results
+3. **Install cuDNN**
 
-The detected objects will be highlighted with bounding boxes and labels on the input image. If --view-img is enabled, the inference result will be displayed in a window. Otherwise, the output image will be saved in the runs/detect/ directory.
+Download cuDNN from the [NVIDIA cuDNN](https://developer.nvidia.com/cudnn) page and follow the installation guide provided for your CUDA version.
 
-Notes
+4. **Verify CUDA Installation**
 
-You might need to adjust the requirements.txt file depending on your system configuration and CUDA version.
+After installation, verify that CUDA is properly installed:
+    ```bash
+    
+    nvcc --version
 
-For detailed information about YOLOv7 and its usage, refer to the official repository: https://github.com/WongKinYiu/yolov7
 
-**Important:**
+    
 
-- Replace `your-username/yolov7-setup.git` with the actual URL of your repository.
-- Make sure you have a `detect.py` file in your project that handles image loading, model inference, and result visualization.
-- If you encounter issues with CUDA or GPU availability, you might need to install the appropriate CUDA toolkit and PyTorch version that supports your GPU.
-content_copy
-Use code with caution.
+
+
+
+
+
+
+
+
+
+
+
