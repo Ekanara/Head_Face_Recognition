@@ -14,7 +14,8 @@ Paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-ti
 
 ## Download weight
 MS COCO
-[**YOLOv7-W6**](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt) 
+[**YOLOv7-W6**]
+(https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt) 
 
 
 ## Installation
