@@ -5,12 +5,13 @@ This repository provides a step-by-step guide to setting up your Python environm
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/yolov7-setup.git
-cd yolov7-setup
+git clone [https://github.com/your-username/yolov7-setup.git](https://github.com/WongKinYiu/yolov7.git)
+cd yolov7
 content_copy
+
 Use code with caution.
 Markdown
-2. Create a Virtual Environment (Recommended)
+## 2. Create a Virtual Environment (Recommended)
 python3 -m venv yolov7-env
 source yolov7-env/bin/activate
 content_copy
