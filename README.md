@@ -38,6 +38,10 @@ It’s recommended to use a virtual environment to avoid conflicts with other pr
 
     pip install upgrade pip
 
+## NOTICE:
+
+## Please change all line of “matching_matrix = torch.zeros_like(cost, device= device)” and "matching_matrix = torch.zeros_like(cost) into matching_matrix = torch.zeros_like(cost, device= 'cpu') in utils/loss.py to avoid encountering CUDA error
+
 ## CUDA Installation
 If you don't have CUDA installed, follow these steps:
 
@@ -77,9 +81,6 @@ Ensure you have PyTorch installed with CUDA support:
       
 Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) according to your setup.
 
-## NOTICE:
-
-## Please change all line of “matching_matrix = torch.zeros_like(cost, device= device)” and "matching_matrix = torch.zeros_like(cost) into matching_matrix = torch.zeros_like(cost, device= 'cpu') in utils/loss.py to avoid encountering CUDA error
 
 2. **Weight**
    
