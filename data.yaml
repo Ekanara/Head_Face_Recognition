@@ -1,0 +1,7 @@
+
+train: ./scut_headface/images/train
+test: ./scut_headface/images/test
+val: ./scut_headface/images/val
+
+nc: 2
+names: ['head','face']
