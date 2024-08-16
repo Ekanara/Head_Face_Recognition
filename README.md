@@ -9,7 +9,7 @@ This guide will walk you through setting up the environment required to run YOLO
 - [Environment Setup](#environment-setup)
 - [CUDA Installation](#cuda-installation)
 - [YOLOv7 Installation](#yolov7-installation)
-- [Deploy](Deploy)
+- [Deploy](#Deploy)
 
 ## Prerequisites
 
@@ -93,19 +93,21 @@ Adjust the PyTorch version and CUDA version (cu118 for CUDA 11.8, etc.) accordin
 # Deploy
 1. **Training**
 
-   Open the terminal and type
+   a. Configure the .yaml file
+   
+   b .Open the terminal and type
    
    ```bash
       python yolov7/train_aux.py --batch 16  --cfg ./config.yaml --epochs 60 --data ./data.yaml --hyp ./hyp.yaml --img 640 --weights 'yolov7-w6.pt' --device 0 --entity 'yolov7' --project <project_name> --name <name>
 
-2. **Testing**
+1. **Testing**
    
    Open the terminal and type
 
    ```bash
       python yolov7/detect.py --weights <your "best.pt" path that you just train> --conf 0.3 --img 1280 --source scut_headface/images/test/
 
-3. **Tensorboard**
+2. **Tensorboard**
    
    Open the terminal and type
 
